@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sohel Shaikh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    <button id="theme-toggle" onclick="toggleTheme()">
+  <span id="theme-icon">
+    <!-- Default Moon (Dark mode) -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+      <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+    </svg>
+  </span>
+</button>
+
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sohel Shaikh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+      <button id="theme-toggle" onclick="toggleTheme()">Mode</button>
+
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/photo1.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sohel Shaikh</h1>
+        <p class="section__text__p2">I am <span id="dynamic-role">Frontend Developer</span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example1.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sohelshaikh7/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SohelTS'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p> OASIS INFOBYTE
+             <br />Web Development and Designing Intern</p>
+             <p> Remote Intern, India</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Science<br />B.Tech in Information Technology<br />Institution: Dr. D. Y. Patil Institute of Technology, Pune</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            <b> Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving complex and challenging real-world problems.</b>
+<p>I am a focused and enthusiastic developer with a deep interest in software development and artificial intelligence. My comprehensive understanding of foundational concepts, combined with hands-on experience in diverse projects, has fueled my passion for these domains. I thrive on building and implementing algorithms to tackle real-world challenges, delivering innovative and impactful solutions.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+         <!-- Frontend Development -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>HTML</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>CSS</h2>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>SASS</h2>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>JavaScript</h2>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>TypeScript</h2>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>Material UI</h2>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Backend Development -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>MySQL</h2>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>Node JS</h2>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+               <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>Bootstrap</h2>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>Express JS</h2>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>TensorFlow</h2>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+               <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h2>Programming in Java, Python</h2>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Tools & Others (NEW) -->
+            <div class="details-container">
+        <h2 class="experience-sub-title">Tools & Others</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h2>VS Code</h2>
+              <!-- <p>Experienced</p> -->
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h2>Figma</h2>
+              <!-- <p>Intermediate</p> -->
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h2>Git & Github</h2>
+              <!-- <p>Intermediate</p> -->
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h2>Agile / Scrum</h2>
+              <!-- <p>Basic</p> -->
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h2>Canva, jupyter</h2>
+              <!-- <p>Experienced</p> -->
+            </div>
+          </article>
+
+            <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h2>AI Tools: ChatGPT, Gemini, Perflexity</h2>
+              <!-- <p>Experienced</p> -->
+            </div>
+          </article>
+        </div>
+      </div>
+
+
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+<section id="certifications">
+  <p class="section__text__p1"></p>
+  <h1 class="title">Certifications</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <!-- Card 1 -->
+      <div class="details-container color-container">
+        <h2 class="experience-sub-title"></h2>
+        <div class="article-container">
+          <ul>
+            <li> Java Certified Foundation Associate: Java Concepts Features by Infosys Springboard</li>
+            <
+            <li>AWSforBeginners: First step to start your Cloud Computing career by Simplilearn</li>
+            
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="details-container color-container">
+        <h2 class="experience-sub-title"></h2>
+        <div class="article-container">
+          <ul>
+             <li> Mastering Linux: The Complete Guide To Becoming Linux Pro by Udemy.</li>
+             <
+            <li> Smart Devices Mobile Emerging Technologies– Yonsei University by Coursera</li>
+          </ul>
+        </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='./#projects'" />
+</section>
+    <section id="projects">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> Loan-Prediction-Analysis-project</h2>
+            <div class="btn-container project-btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SohelTS/Loan-Prediction-Analysis-project'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Healthcare Appointment App</h2>
+            <div class="btn-container project-btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SohelTS/Healthcare-Appointments'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://healthappoint.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+
+
+
+           <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-6.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Music Player</h2>
+            <div class="btn-container project-btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SohelTS/Music_Player'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://music-player-six-swart.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+           <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">NetfliXpress</h2>
+            <div class="btn-container project-btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SohelTS/NetfliXpress'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://netflixpress-e25opk3ht-sohelshaikh20753-gmailcoms-projects.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TechfusionXReg Platform
+</h2>
+            <div class="btn-container project-btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+   <section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+
+  <!-- Contact Form -->
+  <div class="contact-form-container">
+    <form id="contact-form" action="mailto:ashaikh20753@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn btn-color-1">Send</button>
+    </form>
+  </div>
+
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:ashaikh20753@gmail.com">ashaikh20753@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+   <footer>
+  <div class="footer-content">
+    <p>© 2025 Sohel Shaikh | All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="https://github.com/SohelTS" target="_blank" class="github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/sohelshaikh7" target="_blank" class="linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank" class="twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com/__sohelshaikh" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://youtube.com/@yourusername" target="_blank" class="youtube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://facebook.com/yourusername" target="_blank" class="facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Add FontAwesome (for icons) in your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="script.js"></script>
+  </body>
+</html>
